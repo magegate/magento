@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Magegate_Observer>
+            <version>0.0.1</version>
+        </Magegate_Observer>
+    </modules>
+    <global>
+        <models>
+            <magegate_observer>
+                <class>Magegate_Observer_Model</class>
+            </magegate_observer>
+        </models>
+        <events>
+            <model_save_commit_after>
+                <observers>
+                    <magegate_observer_model_save_commit_after>
+                        <class>magegate_observer/observer</class>
+                        <method>listen</method>
+                        <type>singleton</type>
+                    </magegate_observer_model_save_commit_after>
+                </observers>
+            </model_save_commit_after>
+            <model_delete_commit_after>
+                <observers>
+                    <magegate_observer_model_delete_commit_after>
+                        <class>magegate_observer/observer</class>
+                        <method>listen</method>
+                        <type>singleton</type>
+                    </magegate_observer_model_delete_commit_after>
+                </observers>
+            </model_delete_commit_after>
+        </events>
+    </global>
+</config>

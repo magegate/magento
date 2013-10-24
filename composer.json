@@ -1,0 +1,29 @@
+{
+    "name": "magegate/magento",
+    "description": "Magento bootstrap to embed the final Mage class. With models and schemas rest controller",
+    "keywords": ["magento", "magegate", "laravel", "php"],
+    "homepage": "https://github.com/magegate/magento",
+    "authors": [
+        {
+            "name": "magegate",
+            "email": "git@magegate"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/controller",
+            "src/models",
+            "src/views",
+            "tests"
+        ],
+        "psr-0": {
+            "Magegate\\Magento": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
