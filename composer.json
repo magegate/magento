@@ -1,12 +1,12 @@
 {
     "name": "magegate/magento",
-    "description": "Magento bootstrap to embed the final Mage class. With models and schemas rest controller",
+    "description": "Magento bootstrap to embed the final Mage class.",
     "keywords": ["magento", "magegate", "laravel", "php"],
     "homepage": "https://github.com/magegate/magento",
     "authors": [
         {
             "name": "magegate",
-            "email": "git@magegate"
+            "email": "git@magegate.com"
         }
     ],
     "require": {
